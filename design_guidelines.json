@@ -1,0 +1,203 @@
+{
+  "theme": "light",
+  "archetype": "Organic & Earthy / Enterprise SaaS",
+  "colors": {
+    "primary": "#10B981",
+    "secondary": "#34D399",
+    "accent": "#E8F7EE",
+    "background": "#F7FAFC",
+    "surface": "#FFFFFF",
+    "text": {
+      "primary": "#0F172A",
+      "secondary": "#64748B"
+    },
+    "border": "#E2E8F0",
+    "status": {
+      "danger": "#EF4444",
+      "warning": "#F59E0B",
+      "success": "#10B981",
+      "info": "#3B82F6"
+    },
+    "chart": {
+      "income": "#10B981",
+      "expense": "#EF4444",
+      "savings": "#3B82F6",
+      "investment": "#8B5CF6"
+    }
+  },
+  "typography": {
+    "fontFamily": "Inter, sans-serif",
+    "headings": {
+      "weight": "700",
+      "large": "34px",
+      "medium": "24px",
+      "small": "20px"
+    },
+    "body": {
+      "weight": "500",
+      "base": "16px",
+      "small": "14px",
+      "xs": "12px"
+    }
+  },
+  "layout": {
+    "sidebar": {
+      "width": "260px",
+      "behavior": "fixed"
+    },
+    "topbar": {
+      "height": "80px"
+    },
+    "content": {
+      "padding": "32px",
+      "gap": "24px",
+      "background": "#F7FAFC"
+    }
+  },
+  "components": {
+    "card": {
+      "borderRadius": "28px",
+      "shadow": "0 10px 40px rgba(15,23,42,0.06)",
+      "padding": "24px",
+      "hover": {
+        "transform": "translateY(-4px)"
+      },
+      "background": "#FFFFFF",
+      "border": "1px solid #E2E8F0"
+    },
+    "button": {
+      "primary": {
+        "background": "#10B981",
+        "color": "#FFFFFF",
+        "borderRadius": "14px",
+        "height": "48px",
+        "fontWeight": "600"
+      },
+      "secondary": {
+        "background": "#ECFDF5",
+        "color": "#10B981",
+        "borderRadius": "14px",
+        "height": "48px",
+        "fontWeight": "600"
+      },
+      "hover": {
+        "transform": "scale(1.02)"
+      }
+    },
+    "hero_balance_card": {
+      "background": "linear-gradient(135deg, #BBF7D0 0%, #86EFAC 100%)",
+      "balanceFontSize": "42px",
+      "actions": ["Deposit", "Send"]
+    },
+    "stats_cards": {
+      "income": {
+        "iconBg": "#DCFCE7",
+        "icon": "TrendingUp"
+      },
+      "expense": {
+        "iconBg": "#ECFCCB",
+        "icon": "Wallet"
+      },
+      "savings": {
+        "iconBg": "#D1FAE5",
+        "icon": "PiggyBank"
+      }
+    }
+  },
+  "charts": {
+    "line": {
+      "thickness": 4,
+      "tension": 0.4
+    },
+    "bar": {
+      "borderRadius": 12
+    },
+    "donut": {
+      "cutout": "70%"
+    }
+  },
+  "animations": {
+    "transitionDuration": "0.3s",
+    "pageTransition": "fade-slide",
+    "cardHover": "smooth-lift",
+    "sidebarHighlight": "soft-highlight",
+    "buttonHover": "scale-102"
+  },
+  "sections": {
+    "dashboard": [
+      "Balance hero card",
+      "Cashflow Analytics (bar chart)",
+      "AI Assistant chat widget",
+      "Recent Transactions table",
+      "Expense Statistics (donut chart cutout 70%)",
+      "Currency Exchange widget",
+      "Finance Score"
+    ],
+    "admin_panel": {
+      "views": [
+        "User management",
+        "Fraud monitoring",
+        "KYC approval",
+        "Transaction monitoring",
+        "Platform analytics",
+        "Activity logs"
+      ]
+    },
+    "wallet": [
+      "Balance",
+      "Send/Receive money",
+      "Beneficiaries",
+      "QR payment simulation",
+      "Transaction History"
+    ],
+    "transactions": [
+      "Search",
+      "Filter",
+      "Export",
+      "Pagination",
+      "Status tags"
+    ],
+    "ai_analytics": [
+      "Spending Prediction",
+      "Budget Recommendations",
+      "Financial Health",
+      "Risk Score",
+      "Expense Categorization",
+      "Fraud Alerts"
+    ]
+  },
+  "design_rules": [
+    "Generous whitespace",
+    "Subtle animations",
+    "Consistent border radius",
+    "Light glassmorphism allowed",
+    "Enterprise SaaS appearance",
+    "No dark neon colors"
+  ],
+  "image_urls": {
+    "avatars": [
+      "https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjBhdmF0YXIlMjBoZWFkc2hvdHxlbnwwfHx8fDE3Nzg5MjkxNTZ8MA&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBhdmF0YXIlMjBoZWFkc2hvdHxlbnwwfHx8fDE3Nzg5MjkxNTZ8MA&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBhdmF0YXIlMjBoZWFkc2hvdHxlbnwwfHx8fDE3Nzg5MjkxNTZ8MA&ixlib=rb-4.1.0&q=85"
+    ],
+    "backgrounds": [
+      "https://images.unsplash.com/photo-1648878136531-15e7d3a88e76?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMGdyZWVuJTIwd2F2ZXMlMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc3ODkyOTE1Nnww&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1618898613684-2cf0ae9a7c19?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGdyZWVuJTIwd2F2ZXMlMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc3ODkyOTE1Nnww&ixlib=rb-4.1.0&q=85"
+    ],
+    "logos": [
+      "https://images.unsplash.com/photo-1661949734732-7a845100959e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODd8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMGdlb21ldHJpYyUyMGxvZ28lMjBncmVlbnxlbnwwfHx8fDE3Nzg5MjkxNTZ8MA&ixlib=rb-4.1.0&q=85"
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Use tailwindcss for styling, overriding default config where needed (e.g., colors.primary: #10B981, font: Inter).",
+    "Cards MUST have 28px border radius, 24px padding, and soft 10px 40px rgba(15,23,42,0.06) shadow.",
+    "Add 'data-testid' attribute to all interactive and key informational elements.",
+    "Buttons should have 14px border radius and 48px height.",
+    "Ensure layout uses CSS Grid with 24px gap.",
+    "Include Lucide React icons for the Dashboard (TrendingUp, Wallet, PiggyBank).",
+    "Hero card should use the linear-gradient (#BBF7D0 to #86EFAC).",
+    "Donut charts must have 70% cutout and bar charts 12px radius.",
+    "Use Framer Motion to apply fade-slide transitions for pages and smooth-lift (translateY -4px) on card hovers.",
+    "Avoid generic or placeholder text; use real UI copy fitting for a premium fintech app."
+  ]
+}

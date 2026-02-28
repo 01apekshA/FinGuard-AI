@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --brand: #10b981;
+    --brand-soft: #e8f7ee;
+    --surface: #ffffff;
+    --page: #f7fafc;
+    --ink-900: #0f172a;
+    --ink-500: #64748b;
+    --border: #e2e8f0;
+}
+
+html,
+body,
+#root {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: var(--page);
+    color: var(--ink-900);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+* {
+    border-color: var(--border);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 999px;
+    border: 2px solid var(--page);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* Hide scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Sidebar item glow */
+.sidebar-item.active {
+    background: linear-gradient(135deg, #e8f7ee, #d1fae5);
+    color: #047857;
+}
+.sidebar-item.active::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    bottom: 8px;
+    width: 4px;
+    background: #10b981;
+    border-radius: 999px;
+}
+
+/* Pill stat chip */
+.chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.chip-success {
+    background: #d1fae5;
+    color: #047857;
+}
+.chip-danger {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+.chip-warning {
+    background: #fef3c7;
+    color: #b45309;
+}
+.chip-info {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+.chip-neutral {
+    background: #f1f5f9;
+    color: #475569;
+}
+
+/* Gradient hero balance card */
+.balance-hero {
+    background: linear-gradient(135deg, #bbf7d0 0%, #86efac 60%, #4ade80 100%);
+}
+
+/* Subtle dotted texture overlay */
+.dotted::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(
+        circle at 1px 1px,
+        rgba(15, 23, 42, 0.06) 1px,
+        transparent 0
+    );
+    background-size: 22px 22px;
+    pointer-events: none;
+    border-radius: inherit;
+}
+
+/* Auth backdrop */
+.auth-bg {
+    background:
+        radial-gradient(
+            1200px 600px at 80% -10%,
+            rgba(16, 185, 129, 0.18),
+            transparent 60%
+        ),
+        radial-gradient(
+            900px 500px at -20% 100%,
+            rgba(52, 211, 153, 0.14),
+            transparent 60%
+        ),
+        #f7fafc;
+}
