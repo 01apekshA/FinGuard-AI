@@ -4,4 +4,5 @@
 - AI Fraud Detection
 - Transaction Analytics
 - Admin Dashboard
-## Temporary Notes
+## Development Timeline
+Core modules developed incrementallys
