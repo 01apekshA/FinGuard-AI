@@ -14,6 +14,7 @@ import {
 import { fetchRecentTransactions } from "../../redux/slices/transactionSlice";
 import { formatCurrency, initials } from "../../utils/format";
 import TransactionsTable from "../../components/tables/TransactionsTable";
+// Wallet transaction integration
 
 export default function WalletPage() {
   const dispatch = useDispatch();
