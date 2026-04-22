@@ -10,7 +10,7 @@ RAPID_WINDOW_SECONDS = 60
 RAPID_COUNT = 3
 NIGHT_HOURS = range(0, 6)  # 12am-6am local proxy
 
-
+# AI-powered fraud risk evaluation logic
 def evaluate_transaction(db: Session, tx: Transaction) -> dict:
     """Evaluate a transaction; returns dict with risk_score, severity, reasons, is_flagged."""
     reasons: List[str] = []
