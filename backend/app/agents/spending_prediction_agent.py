@@ -4,7 +4,7 @@ from collections import defaultdict
 from sqlalchemy.orm import Session
 from app.models import Transaction
 
-
+# Spending prediction and financial analysis module
 def predict_next_month(db: Session, user_id: str) -> dict:
     since = datetime.now(timezone.utc) - timedelta(days=90)
     txs = (
