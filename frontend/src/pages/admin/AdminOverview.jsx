@@ -17,7 +17,7 @@ import {
   fetchAllTransactions,
 } from "../../redux/slices/adminSlice";
 import { formatCurrency, formatDate } from "../../utils/format";
-
+// Admin monitoring and analytics overview
 export default function AdminOverview() {
   const dispatch = useDispatch();
   const { stats, fraud, transactions } = useSelector((s) => s.admin);
