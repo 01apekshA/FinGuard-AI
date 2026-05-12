@@ -6,3 +6,4 @@
 - Admin Dashboard
 ## Development Timeline
 Core modules developed incrementallys
+## Final
