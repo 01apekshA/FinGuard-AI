@@ -69,8 +69,8 @@ async def assistant(
     current_user: User = Depends(get_current_user),
     db: Session = Depends(get_db),
 ):
-    """Conversational AI assistant powered by Claude Sonnet 4.5 with financial context."""
-    session_id = payload.session_id or f"assist-{current_user.id}-{uuid.uuid4().hex[:8]}"
+    """Conversational AI assistant powered by Gemini."""
+
     health = financial_health_agent.compute_health(db, current_user.id)
     risk = risk_scoring_agent.compute_risk(db, current_user.id)
 
@@ -81,22 +81,27 @@ async def assistant(
         f"Health score: {health['score']} ({health['rating']}). "
         f"Risk: {risk['level']} ({risk['score']})."
     )
+
     system = (
-        "You are FinGuard AI, a friendly fintech assistant for a banking app. "
-        "Be concise, helpful, and specific. Use the user's data below to personalize advice. "
-        "Avoid jargon. Keep answers under 80 words.\n\n"
+        "You are FinGuard AI, a helpful fintech assistant. "
+        "Give short, practical financial advice. "
+        "Keep answers under 80 words.\n\n"
         f"User context: {context}"
     )
 
     reply = await chat_once(
-        session_id=session_id,
         system_message=system,
         user_text=payload.message,
     )
+
     if not reply:
         reply = (
-            f"Here's a quick view: balance ${health['balance']:.0f}, "
-            f"savings ${health['savings']:.0f}, health score {health['score']}/100. "
-            "Ask me to break down your spending or suggest savings goals."
+            f"Balance: ${health['balance']:.0f}, "
+            f"Savings: ${health['savings']:.0f}, "
+            f"Health Score: {health['score']}/100."
         )
-    return AIChatOut(response=reply, session_id=session_id)
+
+    return AIChatOut(
+        response=reply,
+        session_id=str(uuid.uuid4())
+    )

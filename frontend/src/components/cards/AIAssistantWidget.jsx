@@ -42,7 +42,7 @@ export default function AIAssistantWidget({ embedded = false }) {
         </div>
         <div>
           <p className="font-semibold text-ink-900 text-sm">FinGuard AI</p>
-          <p className="text-xs text-ink-500">Powered by Claude Sonnet 4.5</p>
+          <p className="text-xs text-ink-500">Powered by FinGuard AI Engine</p>
         </div>
         <span className="ml-auto chip chip-success">Online</span>
       </div>
